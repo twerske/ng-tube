@@ -1,0 +1,17 @@
+<header class="search-tags">
+  <h3>Tags:</h3>
+  <a *ngFor="let tag of searchTags" (click)="changeQueries(tag)">{{ tag }}</a>
+</header>
+
+<div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4">
+  <div>
+    <a href="https://www.youtube.com/watch?v={{video.videoId}}" target="_blank">
+      <img [src]="video.thumbnail" alt="...">
+    </a>
+    <div>
+      <h5><a href="https://www.youtube.com/watch?v={{video.videoId}}">{{video.title}}</a></h5>
+      <h4>{{video.description.slice(0, 100)}}</h4>
+      <p>{{video.description}}</p>
+    </div>
+  </div>
+</div>

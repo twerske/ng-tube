@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-tube';
+  search(query: string) {
+    console.log(`Search: ${query}`);
+  }
 }

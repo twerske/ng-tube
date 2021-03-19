@@ -1,0 +1,12 @@
+<div *ngFor="let video of videos">
+  <div>
+    <a href="https://www.youtube.com/watch?v={{video.videoId}}" target="_blank">
+      <img [src]="video.thumbnail" alt="...">
+    </a>
+    <div>
+      <h5><a href="https://www.youtube.com/watch?v={{video.videoId}}">{{video.title}}</a></h5>
+      <h4>{{video.description.slice(0, 100)}}</h4>
+      <p>{{video.description}}</p>
+    </div>
+  </div>
+</div>
