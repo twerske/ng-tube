@@ -1,0 +1,22 @@
+:host {
+  width: 80%;
+  overflow-y: scroll;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-auto-rows: auto;
+  place-content: center;
+  
+  overflow-x: none;
+  overflow-y: scroll;
+}
+
+.video-card {
+  margin: 5px;
+
+  .video-header-image {
+    background-size: cover;
+  }
+}

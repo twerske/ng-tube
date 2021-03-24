@@ -1,17 +1,25 @@
 <header class="search-tags">
-  <h3>Tags:</h3>
-  <a *ngFor="let tag of searchTags" (click)="changeQueries(tag)">{{ tag }}</a>
+  <mat-chip-list aria-label="Fish selection">
+    <mat-chip *ngFor="let tag of searchTags" (click)="changeQueries(tag)">
+      {{ tag }}
+    </mat-chip>
+  </mat-chip-list>
 </header>
 
-<div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4">
-  <div>
-    <a href="https://www.youtube.com/watch?v={{video.videoId}}" target="_blank">
-      <img [src]="video.thumbnail" alt="...">
-    </a>
-    <div>
-      <h5><a href="https://www.youtube.com/watch?v={{video.videoId}}">{{video.title}}</a></h5>
-      <h4>{{video.description.slice(0, 100)}}</h4>
-      <p>{{video.description}}</p>
-    </div>
-  </div>
+<div class="videos-grid">
+  <mat-card *ngFor="let video of videos" class="video-card">
+    <img mat-card-image [src]="video.thumbnail" alt="Video thumbnail">
+    <mat-card-header>
+      <div mat-card-avatar class="video-header-image" style="background-image: url({{video.thumbnail}});"></div>
+      <mat-card-title>
+        {{video.title}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{video.channelTitle}}
+      </mat-card-subtitle>
+      <mat-card-subtitle>
+        {{video.views}}K views • {{video.publishedAt | date}}
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
 </div>

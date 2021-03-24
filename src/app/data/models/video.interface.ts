@@ -8,4 +8,5 @@ export interface Video {
   publishedAt?: any;
   description: string;
   thumbnail: string;
+  views?: number;
 }

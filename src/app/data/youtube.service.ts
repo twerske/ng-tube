@@ -32,7 +32,8 @@ export class YoutubeService {
                 channelTitle: item.snippet.channelTitle,
                 description: item.snippet.description,
                 publishedAt: new Date(item.snippet.publishedAt),
-                thumbnail: item.snippet.thumbnails.high.url
+                thumbnail: item.snippet.thumbnails.high.url.replace('hqdefault.jpg', 'mqdefault.jpg'),
+                views: item.snippet.views
               }
             })
         ));

@@ -1,12 +1,11 @@
-<div *ngFor="let video of videos">
-  <div>
-    <a href="https://www.youtube.com/watch?v={{video.videoId}}" target="_blank">
-      <img [src]="video.thumbnail" alt="...">
-    </a>
-    <div>
-      <h5><a href="https://www.youtube.com/watch?v={{video.videoId}}">{{video.title}}</a></h5>
-      <h4>{{video.description.slice(0, 100)}}</h4>
-      <p>{{video.description}}</p>
-    </div>
-  </div>
+<div class="videos-grid">
+  <mat-card *ngFor="let video of videos" class="video-card">
+    <img mat-card-image [src]="video.thumbnail" alt="Video thumbnail">
+    <mat-card-header>
+      <div mat-card-avatar class="video-header-image" style="background-image: url({{video.thumbnail}});"></div>
+      <mat-card-title>{{video.title}}</mat-card-title>
+      <mat-card-subtitle>{{video.channelTitle}}</mat-card-subtitle>
+      <mat-card-subtitle>{{video.views}}K views • {{video.publishedAt | date}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
 </div>
