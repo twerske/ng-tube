@@ -1,10 +1,5 @@
 <header class="toolbar">
-  <div class="left header-item">
-    <button mat-icon-button aria-label="Menu">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <h1>ngTube</h1>
-  </div>
+  <div class="left header-item"></div>
   <div class="center header-item">
     <form class="search-form">
       <mat-form-field>
@@ -32,112 +27,6 @@
     </button>
   </div>
 </header>
-
-<div class="main">
-  <nav class="navigation">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/" routerLinkActive="active">
-        <mat-icon mat-list-icon color="primary">home</mat-icon>
-        <div mat-line>Home</div>
-      </a>
-      <a mat-list-item routerLink="feed/trending" routerLinkActive="active">
-        <mat-icon mat-list-icon color="accent">explore</mat-icon>
-        <div mat-line>Explore</div>
-      </a>
-      <a mat-list-item routerLink="feed/subscriptions" routerLinkActive="active">
-        <mat-icon mat-list-icon color="accent">subscriptions</mat-icon>
-        <div mat-line>Subscriptions</div>
-      </a>
-   </mat-nav-list>
-    <mat-divider></mat-divider>
-    <mat-list>
-      <mat-list-item>
-        <mat-icon mat-list-icon>video_library</mat-icon>
-        <div mat-line>Library</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>history</mat-icon>
-        <div mat-line>History</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>ondemand_video</mat-icon>
-        <div mat-line>Your videos</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>access_time</mat-icon>
-        <div mat-line>Watch later</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>thumb_up</mat-icon>
-        <div mat-line>Liked videos</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>playlist_play</mat-icon>
-        <div mat-line>Playlists</div>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <div mat-subheader>Subscriptions</div>
-      <mat-list-item>
-        <mat-icon mat-list-icon>face</mat-icon>
-        <div mat-line>Rhubarb</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>face</mat-icon>
-        <div mat-line>Basil</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>face</mat-icon>
-        <div mat-line>Chester</div>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <div mat-subheader>More From ngTube</div>
-      <mat-list-item>
-        <mat-icon mat-list-icon>smart_display</mat-icon>
-        <div mat-line>ngTube Premium</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>local_movies</mat-icon>
-        <div mat-line>Movies & Shows</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>videogame_asset</mat-icon>
-        <div mat-line>Gaming</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>checkroom</mat-icon>
-        <div mat-line>Fashion & Beauty</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>stream</mat-icon>
-        <div mat-line>Live</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>lightbulb</mat-icon>
-        <div mat-line>Learning</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>emoji_events</mat-icon>
-        <div mat-line>Sports</div>
-      </mat-list-item>
-      <mat-divider></mat-divider>
-      <mat-list-item>
-        <mat-icon mat-list-icon>settings</mat-icon>
-        <div mat-line>Settings</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon color="warn">emoji_flags</mat-icon>
-        <div mat-line>Report history</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>help_outline</mat-icon>
-        <div mat-line>Help</div>
-      </mat-list-item>
-      <mat-list-item>
-        <mat-icon mat-list-icon>feedback</mat-icon>
-        <div mat-line>Send feedback</div>
-      </mat-list-item>
-    </mat-list>
-  </nav>
-  
+<app-video-nav>  
   <router-outlet></router-outlet>
-</div>
+</app-video-nav>

@@ -17,12 +17,17 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
+import { VideoNavComponent } from './video-nav/video-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedComponent,
-    VideoGridComponent
+    VideoGridComponent,
+    VideoNavComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +43,9 @@ import { MatCardModule } from '@angular/material/card';
     MatFormFieldModule,
     MatChipsModule,
     MatCardModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

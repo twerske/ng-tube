@@ -2,10 +2,6 @@
   display: flex;
   justify-content: space-between;
   height: 5%;
-
-  h1 {
-    margin: 0;
-  }
 }
 
 .header-item {
@@ -18,15 +14,5 @@
 
   &.left {
     margin-left: 20px;
-  }
-}
-
-.main {
-  display: flex;
-  height: 95%;
-
-  .navigation {
-    width: 20%;
-    overflow-y: scroll;
   }
 }
