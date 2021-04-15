@@ -11,25 +11,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
-import { VideoNavComponent } from './video-nav/video-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { VideoCardComponent } from './video-card/video-card.component';
+import { VideoNavModule } from './video-nav/video-nav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     FeedComponent,
     VideoGridComponent,
-    VideoNavComponent
+    VideoCardComponent
   ],
   imports: [
+    VideoNavModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -37,15 +35,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
-    MatDividerModule,
-    MatListModule,
     MatInputModule,
     MatFormFieldModule,
     MatChipsModule,
     MatCardModule,
     LayoutModule,
-    MatToolbarModule,
-    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
