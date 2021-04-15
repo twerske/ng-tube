@@ -17,10 +17,9 @@ To use the YouTube API, set up your project and API key [here](https://developer
 - [Starter code branch](https://github.com/twerske/ng-tube/tree/get-started-with-material)
 - [Solution code](https://github.com/twerske/ng-tube/tree/get-started-with-material-solution)
 
-<!-- ### 3 Ways to Refactor your Angular UI
-- [YouTube video]()
+### 3 Ways to Refactor your Angular UI
 - [Starter code branch](https://github.com/twerske/ng-tube/tree/best-practices)
 - [Solution code](https://github.com/twerske/ng-tube/tree/best-practices-solution)
-  - [Add a navigation with component schematics]()
-  - [Define small, single purpose, reusable components]()
-  - [Modularize your ngModules]() -->
+  - [Add a navigation with component schematics](https://github.com/twerske/ng-tube/commit/85d71d9820bd571f56eed6984472680390cecee2)
+  - [Define small, single purpose, reusable components](https://github.com/twerske/ng-tube/commit/c4d528c86971b13c04c6345e59c7aad19a22a711)
+  - [Modularize your ngModules](https://github.com/twerske/ng-tube/commit/7981f8faa3bcbfeb7b2bf61c0b1f8e1a8f6057fd)
