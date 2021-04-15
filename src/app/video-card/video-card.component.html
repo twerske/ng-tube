@@ -1,0 +1,15 @@
+<mat-card class="video-card">
+  <img mat-card-image [src]="video?.thumbnail" alt="Video thumbnail">
+  <mat-card-header>
+    <div mat-card-avatar class="video-header-image" style="background-image: url({{video?.thumbnail}});"></div>
+    <mat-card-title>
+      {{video?.title}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{video?.channelTitle}}
+    </mat-card-subtitle>
+    <mat-card-subtitle>
+      {{video?.views}}K views • {{video?.publishedAt | date}}
+    </mat-card-subtitle>
+  </mat-card-header>
+</mat-card>

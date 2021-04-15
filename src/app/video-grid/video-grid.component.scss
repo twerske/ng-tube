@@ -20,14 +20,5 @@
   grid-auto-rows: auto;
   place-content: center;
   
-  overflow-x: none;
   overflow-y: scroll;
-}
-
-.video-card {
-  margin: 5px;
-
-  .video-header-image {
-    background-size: cover;
-  }
 }
